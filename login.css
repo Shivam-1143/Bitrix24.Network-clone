@@ -1,0 +1,137 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Montserrat-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #525c69;
+}
+#container{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to bottom,#5ce5fb 0,#2fc6f6 100%);
+}
+#cover{
+    transform: translateX(0);
+    opacity: 1;
+    flex-grow: 1;
+    padding: 45px 49px 49px 45px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    box-sizing: border-box;
+    transition: transform .7s cubic-bezier(.36,.15,.26,.99),opacity .7s cubic-bezier(.36,.15,.26,.99);
+    height: 80vh;
+    justify-content: space-between;
+    color: #fff;
+}
+#cover-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    margin-bottom: 9px;
+    margin-right: 0;
+    color: #fff;
+}
+#logo>img{
+    max-width: 100%;
+    height: auto;
+    color: #fff;
+}
+#back{
+    opacity: .9;
+    transition: opacity .2s ease;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+a{
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-left: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+#link-back::before{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 11px;
+    height: 7px;
+    background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2211%22%20height%3D%227%22%20viewBox%3D%220%200%2011%207%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M1.93%203H11v1H2.042L4%206.147%203.222%207%20.112%203.588l.024-.027L0%203.411%203.111%200l.778.853L1.93%203z%22%20fill%3D%22white%22/%3E%0A%3C/svg%3E%0A) no-repeat center;
+    content: '';
+}
+#cover-middle{
+    max-width: 490px;
+}
+#cover-middle div{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat-medium',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 3px;
+}
+
+#cover-middle span{
+    font-size: 25px;
+    line-height: 26px;
+    font-family: 'Montserrat-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+}
+#cloud>div:nth-child(1){
+    position: absolute;
+    left: -185px;
+    top: 116px;
+    width: 760px;
+    height: 474px;
+    transition: left 5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22754%22%20height%3D%22474%22%20viewBox%3D%220%200%20754%20474%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%3Cpath%20opacity%3D%22.399%22%20d%3D%22M617.36%20131.239C610.323%2058.159%20548.315%201%20472.835%201c-58.294%200-108.54%2034.11-131.651%2083.3-15.49-5.59-32.204-8.646-49.641-8.646-80.2%200-145.213%2064.521-145.213%20144.117%200%203.765.19%207.484.475%2011.177a124.73%20124.73%200%200%200-30.016-3.659C48.421%20227.289-7%20282.292-7%20350.145-7%20417.996%2048.42%20473%20116.789%20473h461.853C674.938%20473%20753%20395.521%20753%20299.952c0-82.358-57.985-151.228-135.64-168.713%22%20stroke%3D%22white%22/%3E%0A%3C/svg%3E%0A);
+}
+
+#cloud>div:nth-child(4){
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:650px;
+    left: 180px;
+    pointer-events: none;
+    width: 127px;
+    height: 80px;
+    transition: left 5s ease-in-out;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20viewBox%3D%220%200%20127%2080%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%3Cpath%20opacity%3D%22.2%22%20fill-rule%3D%22evenodd%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-width%3D%221%22%20%20clip-rule%3D%22evenodd%22%20d%3D%22M104.057%2021.87C102.884%209.598%2092.55%200%2079.97%200c-9.715%200-18.09%205.728-21.94%2013.988a24.161%2024.161%200%200%200-8.274-1.452c-13.366%200-24.202%2010.835-24.202%2024.201%200%20.633.032%201.257.08%201.877A20.636%2020.636%200%200%200%2020.63%2038C9.237%2038%200%2047.236%200%2058.63c0%2011.395%209.237%2020.631%2020.631%2020.631h76.973c16.049%200%2029.059-13.01%2029.059-29.059%200-13.83-9.664-25.395-22.606-28.331z%22%20fill%3D%22white%22/%3E%0A%3C/svg%3E%0A);
+}
+#form{
+    transform: translateX(0);
+    opacity: 1;
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 105px 60px 10px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 22px rgb(0 0 0 / 12%);
+    transition: transform .8s cubic-bezier(.36,.15,.26,.99),opacity .8s cubic-bezier(.36,.15,.26,.99);
+    flex: 1;
+    flex-grow: 1.5;
+    -webkit-box-flex: 6;
+}
+
+
+
+
+
+
