@@ -25,12 +25,15 @@ body{
     flex-grow: 4;
     -webkit-box-flex: 4;
     box-sizing: border-box;
-    min-width: 450px;
-    max-width: 900px;
     transition: transform .7s cubic-bezier(.36,.15,.26,.99),opacity .7s cubic-bezier(.36,.15,.26,.99);
     height: 100vh;
     font-family: 'Montserrat-regular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    animation: mymove 0.5s 1;
 }
+@keyframes mymove {
+    from {flex-grow: 100;}
+    to {flex-grow: 4;}
+  }
 #cover-top{
     display: flex;
     flex-wrap: wrap;
@@ -406,3 +409,4 @@ li>img{
     cursor: pointer;
     color: #fff;
 }
+
